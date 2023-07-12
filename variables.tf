@@ -103,6 +103,12 @@ variable "engine_version" {
   description = "Redis engine version"
 }
 
+variable "data_tiering_enabled" {
+  type        = bool
+  default     = false
+  description = "Enable data tiering"
+}
+
 variable "at_rest_encryption_enabled" {
   type        = bool
   default     = false
